@@ -1,16 +1,20 @@
+
+function calcul_nirpp()
+{
 var s = "";
-var nirpp=""
+var nirpp="";
 var cle = 0;
 
 s = this.getField("NIRPP").value;
-s = s.trim();
-for (let i = 0; i<s.length; i ++) {
+s = s.toString();
+for (var i=0; i<s.length; i++) {
   if ((s.charAt(i)>="0") && (s.charAt(i)<="9")) {
-    nirpp = nirpp + s.charAt(i);
+	nirpp = nirpp.toString() + s.charAt(i);
   }
 };
 
 nirpp=nirpp.substring(0,13);
+
 if (nirpp.length == 13) {
   cle = nirpp % 97;
   cle = 97 - cle;
@@ -23,5 +27,6 @@ if (nirpp.length == 13) {
 };
 
 this.getField("CLE").value = cle;
+}
 
 

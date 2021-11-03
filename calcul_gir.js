@@ -1,3 +1,4 @@
+
 function calcul_gir()
 {
 
@@ -9,18 +10,20 @@ var correct = 1;
 var rang=0;
 var GIR="?";
 
+
 code1 = this.getField("COHERENCE").value;
-if ((code1 == "A") || (code1 = "B") || (code1 = "C")) {
+if ((code1 == "A") || (code1 == "B") || (code1 == "C")) {
   chaine=code1;
 } else {
     chaine="0";
     correct=0;
 };
+
 code1 = this.getField("ORIENTATION").value;
-if ((code1 == "A") || (code1 = "B") || (code1 = "C")) {
+if ((code1 == "A") || (code1 == "B") || (code1 == "C")) {
   chaine=chaine+code1;
 } else {
-    chaine=chaine+"0";
+    chaine=chaine.toString()+"0";
     correct=0;
 };
 code1 = this.getField("TOILETTE_H").value;
@@ -36,12 +39,13 @@ if ((code1=="C") && (code2=="C")) {
 } else {
     code1="B";
 };
-if ((code1 == "A") || (code1 = "B") || (code1 = "C")) {
+if ((code1 == "A") || (code1 == "B") || (code1 == "C")) {
   chaine=chaine+code1;
 } else {
-    chaine=chaine+"0";
+    chaine=chaine.toString()+"0";
     correct=0;
 };
+
 code1 = this.getField("HABILLAGE_H").value;
 code2 = this.getField("HABILLAGE_M").value;
 code3 = this.getField("HABILLAGE_B").value;
@@ -56,12 +60,13 @@ if ((code1=="C") && (code2=="C")) {
 } else {
     code1="B";
 };
-if ((code1 == "A") || (code1 = "B") || (code1 = "C")) {
+if ((code1 == "A") || (code1 == "B") || (code1 == "C")) {
   chaine=chaine+code1;
 } else {
-    chaine=chaine+"0";
+    chaine=chaine.toString()+"0";
     correct=0;
 };
+
 code1 = this.getField("ALIMENTATION_S").value;
 code2 = this.getField("ALIMENTATION_M").value;
 if ((code1<"A") || (code2<"A")) {
@@ -75,12 +80,13 @@ if ((code1=="C") && (code2=="C")) {
 } else {
     code1="B";
 };
-if ((code1 == "A") || (code1 = "B") || (code1 = "C")) {
+if ((code1 == "A") || (code1 == "B") || (code1 == "C")) {
   chaine=chaine+code1;
 } else {
-    chaine=chaine+"0";
+    chaine=chaine.toString()+"0";
     correct=0;
 };
+
 code1 = this.getField("ELIMINATION_U").value;
 code2 = this.getField("ELIMINATION_F").value;
 if ((code1<"A") || (code2<"A")) {
@@ -94,42 +100,43 @@ if ((code1=="C") && (code2=="C")) {
 } else {
     code1="B";
 };
-if ((code1 == "A") || (code1 = "B") || (code1 = "C")) {
+if ((code1 == "A") || (code1 == "B") || (code1 == "C")) {
   chaine=chaine+code1;
 } else {
-    chaine=chaine+"0";
+    chaine=chaine.toString()+"0";
     correct=0;
 };
 code1 = this.getField("TRANSFERT").value;
-if ((code1 == "A") || (code1 = "B") || (code1 = "C")) {
-  chaine=code1;
+if ((code1 == "A") || (code1 == "B") || (code1 == "C")) {
+  chaine=chaine+code1;
 } else {
-    chaine="0";
+    chaine=chaine.toString()+"0";
     correct=0;
 };
 code1 = this.getField("DEPLACEMENT_INT").value;
-if ((code1 == "A") || (code1 = "B") || (code1 = "C")) {
-  chaine=code1;
+if ((code1 == "A") || (code1 == "B") || (code1 == "C")) {
+  chaine=chaine+code1;
 } else {
-    chaine="0";
+    chaine=chaine.toString()+"0";
     correct=0;
 };
 code1 = this.getField("DEPLACEMENT_EXT").value;
-if ((code1 == "A") || (code1 = "B") || (code1 = "C")) {
-  chaine=code1;
+if ((code1 == "A") || (code1 == "B") || (code1 == "C")) {
+  chaine=chaine+code1;
 } else {
-    chaine="0";
+    chaine=chaine.toString()+"0";
     correct=0;
 };
 code1 = this.getField("COMMUNICATION").value;
-if ((code1 == "A") || (code1 = "B") || (code1 = "C")) {
-  chaine=code1;
+if ((code1 == "A") || (code1 == "B") || (code1 == "C")) {
+  chaine=chaine+code1;
 } else {
-    chaine="0";
+    chaine=chaine.toString()+"0";
     correct=0;
 };
 
-console.log("chaine = "+chaine);
+console.println("chaine = "+chaine);
+
 
 if (correct==1) {
 
