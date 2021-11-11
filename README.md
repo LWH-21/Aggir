@@ -1,7 +1,7 @@
 # Aggir
 Formulaire PDF grille Aggir avec calcul du Gir
 
-Ceci est un formulaire de grille AGGIR avec le calcul du Gir intégré. Comme il s'agit d'un PDF, il est possible de le remplir, de l'enregistrer, d'y apposer des anotations. 
+Ceci est un formulaire de grille AGGIR avec le calcul du Gir intégré. Comme il s'agit d'un PDF, il est possible de le remplir, de l'enregistrer, d'y apposer des anotations, de le signer et ceci sur un ordinateur, une tablette ou un smartphone.
 
 Le Gir est calculé automatiquement dès que les 10 variables discriminantes sont renseignées. A chaque modification d'une variable discriminante, le Gir est recalculé.
 
