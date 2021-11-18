@@ -7,6 +7,6 @@ Le Gir est calculé automatiquement dès que les 10 variables discriminantes son
 
 De même, la clé du numéro de sécurité sociale (Nirpp) est calculée automatiquement.
 
-Voici un aperçu du formulaire :
+Le formulaire est proposé en deux versions, avec ou sans les adverbes :
 
 ![Formumaire AGGIR](aggir_01.jpg)
